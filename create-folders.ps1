@@ -4,19 +4,20 @@ $basePath = (Get-Location).Path
 
 # Define the folder structure
 $folders = @(
-    "01_Personal",
-    "01_Personal\Goals",
-    "01_Personal\Journal",
-    "02_\Projects",
-    "02_\Projects\ProjectA",
-    "03_Learning",
-    "03_Learning\Programming",
-    "03_Learning\Programming\Python",
-    "03_Learning\Languages",
-    "03_Learning\Languages\English",
-    "03_Learning\Languages\Japanese",
-    "Templates",
-    "Archive"
+    "docs",
+    "notes\01_Personal",
+    "notes\01_Personal\Goals",
+    "notes\01_Personal\Journal",
+    "notes\03_Learning",
+    "notes\03_Learning\Programming",
+    "notes\03_Learning\Programming\Python",
+    "notes\03_Learning\Languages",
+    "notes\03_Learning\Languages\English",
+    "notes\03_Learning\Languages\Japanese",
+    "notes\templates",
+    "notes\archive",
+    "projects",
+    "projects\ProjectA"
 )
 
 # Create the folders
