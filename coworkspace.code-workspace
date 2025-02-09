@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"name": "workspace",
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.renderWhitespace": "all",
+		"terminal.integrated.env.windows": {
+			"WORKSPACE_PATH": "${workspaceFolder}"
+		},	
+		"terminal.integrated.defaultProfile.windows": "ps-custom",
+		"terminal.integrated.profiles.windows": {
+			"ps-custom": {
+				"source": "PowerShell",
+				"icon": "terminal-powershell",
+				"args": [
+					"-NoExit",
+					"-Command",
+					"if (Test-Path '${workspaceFolder:workspace}/ps_custom.ps1') { . '${workspaceFolder:workspace}/ps_custom.ps1' }"
+				]
+			}
+		},		
+		"terminal.integrated.defaultProfile.linux": "bash-custom"
+		"terminal.integrated.profiles.linux": {
+			"bash-custom": {
+				"path": "bash",
+				"icon": "terminal-bash",
+				"args": ["--init-file", "${env:HOME}/co-workspace/bash_profile.sh"]
+			}
+		},
+		"favorites.resources": [
+		]
+	}
+}
